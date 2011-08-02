@@ -33,5 +33,5 @@ group :test, :development do
   gem 'sqlite3'
 end
 
-gem 'haml'
+gem 'haml-rails'
 gem 'steak'
