@@ -1,4 +1,6 @@
 Jobcompare::Application.routes.draw do
+  resources :jobs
+
   resources :job_property_values
 
   resources :job_properties
