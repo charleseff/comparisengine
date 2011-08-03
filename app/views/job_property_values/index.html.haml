@@ -1,0 +1,23 @@
+%h1 Listing job_property_values
+
+%table
+  %tr
+    %th Job
+    %th Job property
+    %th Value
+    %th
+    %th
+    %th
+
+  - @job_property_values.each do |job_property_value|
+    %tr
+      %td= job_property_value.job_id
+      %td= job_property_value.job_property_id
+      %td= job_property_value.value
+      %td= link_to 'Show', job_property_value
+      %td= link_to 'Edit', edit_job_property_value_path(job_property_value)
+      %td= link_to 'Destroy', job_property_value, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Job property value', new_job_property_value_path

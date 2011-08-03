@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @job.name
+%p
+  %b User:
+  = @job.user_id
+%p
+  %b Job comparer:
+  = @job.job_comparer_id
+
+= link_to 'Edit', edit_job_path(@job)
+\|
+= link_to 'Back', jobs_path

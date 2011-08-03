@@ -1,4 +1,12 @@
 Jobcompare::Application.routes.draw do
+  resources :job_property_values
+
+  resources :jobs
+
+  resources :job_comparers
+
+  devise_for :users
+
   resources :job_properties
 
   # The priority is based upon order of creation:

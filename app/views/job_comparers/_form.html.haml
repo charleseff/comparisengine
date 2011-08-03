@@ -1,0 +1,16 @@
+= form_for @job_comparer do |f|
+  -if @job_comparer.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@job_comparer.errors.count, "error")} prohibited this job_comparer from being saved:"
+      %ul
+        - @job_comparer.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :user_id
+    = f.text_field :user_id
+  .actions
+    = f.submit 'Save'
