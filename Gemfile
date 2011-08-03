@@ -37,3 +37,4 @@ gem 'haml-rails'
 gem 'steak'
 
 gem 'devise'
+gem 'compass'
