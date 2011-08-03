@@ -35,3 +35,5 @@ end
 
 gem 'haml-rails'
 gem 'steak'
+
+gem 'devise'
