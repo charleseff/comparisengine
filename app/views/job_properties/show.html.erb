@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @job_property.name %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @job_property.weight %>
+</p>
+
+
+<%= link_to 'Edit', edit_job_property_path(@job_property) %> |
+<%= link_to 'Back', job_properties_path %>
