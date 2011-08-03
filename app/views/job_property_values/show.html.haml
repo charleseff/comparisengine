@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Job:
+  = @job_property_value.job_id
+%p
+  %b Job property:
+  = @job_property_value.job_property_id
+%p
+  %b Value:
+  = @job_property_value.value
+
+= link_to 'Edit', edit_job_property_value_path(@job_property_value)
+\|
+= link_to 'Back', job_property_values_path
